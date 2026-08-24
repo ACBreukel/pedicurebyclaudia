@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Prijslijst | Pedicure by Claudia</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="site-header"><nav class="nav"><a class="brand" href="index.html"><img src="images/logo.jpg" alt="Logo Pedicure by Claudia"><span class="brand-text">Claudia</span></a><button class="menu-toggle" onclick="toggleMenu()" aria-label="Menu openen">☰</button><ul class="nav-links" id="navLinks"><li><a href="index.html">Home</a></li><li><a href="behandelingen.html">Behandelingen</a></li><li><a href="prijzen.html" class="active">Prijslijst</a></li><li><a href="contact.html">Contact</a></li></ul></nav></header>
+
+<section class="page-hero">
+    <div class="container">
+        <div class="eyebrow">Overzicht</div>
+        <h1>Prijslijst</h1>
+        <p>Alle prijzen overzichtelijk bij elkaar. De behandeltijden zijn bewust weggelaten.</p>
+    </div>
+</section>
+
+<section class="prices">
+    <div class="container">
+
+        <div class="price-category">
+            <h3>Manicure & Pedicure</h3>
+            <div class="price-row"><div>Pedicure (compleet)</div><div class="price">€ 45,00</div></div>
+            <div class="price-row"><div>Pedicure relaxed met een handmassage</div><div class="price">€ 55,00</div></div>
+            <div class="price-row"><div>Pedicure met ontspannende beenmassage</div><div class="price">€ 57,50</div></div>
+            <div class="price-row"><div>Pedicure met nagellak</div><div class="price">€ 60,00</div></div>
+            <div class="price-row"><div>Pedicure met gellak</div><div class="price">€ 68,00</div></div>
+        </div>
+
+        <div class="price-category">
+            <h3>Spa Pedicure Deluxe</h3>
+            <div class="price-row"><div>Zonder lak</div><div class="price">€ 65,00</div></div>
+            <div class="price-row"><div>Met nagellak</div><div class="price">€ 75,00</div></div>
+            <div class="price-row"><div>Met gellak</div><div class="price">€ 85,00</div></div>
+        </div>
+
+        <div class="price-category">
+            <h3>Basis Voetverzorging</h3>
+            <div class="price-row"><div>Nagels en nagelomgeving</div><div class="price">€ 35,00</div></div>
+        </div>
+
+        <div class="price-category">
+            <h3>Kinder Pedicure tot 14 jaar</h3>
+            <div class="price-row"><div>Alleen pedicure</div><div class="price">€ 30,00</div></div>
+            <div class="price-row"><div>Pedicure met nagellak</div><div class="price">€ 40,00</div></div>
+            <div class="price-row"><div>Kids spa</div><div class="price">€ 45,00</div></div>
+        </div>
+
+        <div class="price-category">
+            <h3>Overige behandelingen</h3>
+            <div class="price-row"><div>Gellak tenen</div><div class="price">€ 30,00</div></div>
+            <div class="price-row"><div>Teennagels lakken</div><div class="price">€ 20,00</div></div>
+            <div class="price-row"><div>Enkel één likdoorn of ingroeiende nagel behandelen</div><div class="price">€ 27,50</div></div>
+            <div class="price-row"><div>Pedicure Plus</div><div class="price">€ 85,00</div></div>
+            <div class="price-row"><div>Ontspannende onderbeenmassage</div><div class="price">€ 20,00</div></div>
+            <div class="price-row"><div>Ontspannende handmassage</div><div class="price">€ 10,00</div></div>
+        </div>
+
+        <div class="notice">
+            Prijzen kunnen in de toekomst worden aangepast. Controleer bij het maken van een afspraak altijd de actuele prijs.
+        </div>
+    </div>
+</section>
+
+
+<footer>
+    <div class="footer-logo">Claudia</div>
+    <p>Pedicure by Claudia · Uw voeten, mijn zorg.</p>
+    <p>© 2026 Pedicure by Claudia</p>
+</footer>
+
+
+<script>
+function toggleMenu(){
+    document.getElementById('navLinks').classList.toggle('open');
+}
+document.querySelectorAll('.nav-links a').forEach(function(link){
+    link.addEventListener('click',function(){
+        document.getElementById('navLinks').classList.remove('open');
+    });
+});
+</script>
+
+</body>
+</html>

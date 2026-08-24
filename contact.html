@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact | Pedicure by Claudia</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="site-header"><nav class="nav"><a class="brand" href="index.html"><img src="images/logo.jpg" alt="Logo Pedicure by Claudia"><span class="brand-text">Claudia</span></a><button class="menu-toggle" onclick="toggleMenu()" aria-label="Menu openen">☰</button><ul class="nav-links" id="navLinks"><li><a href="index.html">Home</a></li><li><a href="behandelingen.html">Behandelingen</a></li><li><a href="prijzen.html">Prijslijst</a></li><li><a href="contact.html" class="active">Contact</a></li></ul></nav></header>
+
+<section class="page-hero">
+    <div class="container">
+        <div class="eyebrow">Persoonlijk contact</div>
+        <h1>Contact</h1>
+        <p>Heeft u een vraag of wilt u een afspraak maken? Neem gerust contact op.</p>
+    </div>
+</section>
+
+<section class="contact-section">
+    <div class="container">
+
+        <div class="contact-grid">
+            <div class="contact-box">
+                <div class="icon">☎</div>
+                <h3>Telefoon</h3>
+                <a href="tel:+31683036385">06 - 83036385</a>
+            </div>
+
+            <div class="contact-box">
+                <div class="icon">✉</div>
+                <h3>E-mail</h3>
+                <a href="mailto:info@pedicurebyclaudia.nl">info@pedicurebyclaudia.nl</a>
+            </div>
+
+            <div class="contact-box">
+                <div class="icon">♡</div>
+                <h3>Afspraak</h3>
+                <p>Neem contact op voor beschikbaarheid en het plannen van een behandeling.</p>
+            </div>
+        </div>
+
+        <div class="section-heading">
+            <span>Stuur een bericht</span>
+            <h2>Neem contact op</h2>
+            <div class="line"></div>
+        </div>
+
+        <form class="form" action="#" method="post">
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="naam">Naam</label>
+                    <input type="text" id="naam" name="naam" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="telefoon">Telefoonnummer</label>
+                <input type="tel" id="telefoon" name="telefoon">
+            </div>
+
+            <div class="form-group">
+                <label for="bericht">Bericht</label>
+                <textarea id="bericht" name="bericht" placeholder="Waar kan ik u mee helpen?"></textarea>
+            </div>
+
+            <button class="button gold" type="submit">Verstuur bericht</button>
+        </form>
+
+        <div class="notice">
+            <strong>Let op:</strong> het formulier is op dit moment een vormgeving. Om daadwerkelijk berichten te ontvangen, moet het formulier nog gekoppeld worden aan een e-mailservice of website-hosting.
+        </div>
+
+    </div>
+</section>
+
+
+<footer>
+    <div class="footer-logo">Claudia</div>
+    <p>Pedicure by Claudia · Uw voeten, mijn zorg.</p>
+    <p>© 2026 Pedicure by Claudia</p>
+</footer>
+
+
+<script>
+function toggleMenu(){
+    document.getElementById('navLinks').classList.toggle('open');
+}
+document.querySelectorAll('.nav-links a').forEach(function(link){
+    link.addEventListener('click',function(){
+        document.getElementById('navLinks').classList.remove('open');
+    });
+});
+</script>
+
+</body>
+</html>
